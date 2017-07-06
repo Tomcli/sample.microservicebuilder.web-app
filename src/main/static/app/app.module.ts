@@ -27,6 +27,7 @@ import {SessionFilterSpeaker} from "./session/session.filter.speaker";
 import {SessionSpeakersComponent} from "./session/session.speakers.component";
 import {MomentModule} from 'angular2-moment';
 import {ChartModule} from 'primeng/primeng';
+import { CookieService } from 'angular2-cookie/services/cookies.service';
 
 @NgModule({
     imports: [
@@ -62,6 +63,7 @@ import {ChartModule} from 'primeng/primeng';
         SessionService,
         ScheduleService,
         VoteService,
+        CookieService,
         Location,
         {provide: LocationStrategy, useClass: HashLocationStrategy}
     ],

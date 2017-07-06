@@ -185,6 +185,10 @@ gulp.task('js-bundles', function () {
         './node_modules/rxjs/**/*.js'
     ], {base: './node_modules/rxjs/'}).pipe(gulp.dest(target + '/' + resources + '/assets/js/node_modules/rxjs'));
 
+    var cookie = gulp.src([
+        './node_modules/angular2-cookie/**/*.js'
+    ], {base: './node_modules/angular2-cookie/'}).pipe(gulp.dest(target + '/' + resources + '/assets/js/node_modules/angular2-cookie'));
+
     var wapi = gulp.src([
         './node_modules/angular2-in-memory-web-api/**/*.js'
     ], {base: './node_modules/angular2-in-memory-web-api/'}).pipe(gulp.dest(target + '/' + resources + '/assets/js/node_modules/angular2-in-memory-web-api'));
